@@ -1,0 +1,70 @@
+@import "_variables";
+
+// regular
+input[type="button"],
+input[type="submit"],
+button {
+	height: $e12;
+	min-width: $e15;
+	max-width: $e16;
+	padding: $e8;
+	outline: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	letter-spacing: -$e2;
+	line-height: 0;
+	font-weight: 400;
+    transition: transform $transition-speed;
+	border-width : $e7;
+	border-style: solid;
+}
+
+// active
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+	transform: scale($scale);
+	transition-duration: 0ms;
+}
+
+// normal
+
+input[type="button"].normal,
+input[type="submit"].normal,
+button.normal {
+	color: $fg-reg;
+	background-color:$bg-reg; 
+	border-color : $br-reg;
+}
+
+// regular - hover
+input[type="button"].normal:hover,
+input[type="submit"].normal:hover,
+button.normal:hover {
+	border-color : $br-reg-hover;
+}
+
+// active
+input[type="button"].normal:active,
+input[type="submit"].normal:active,
+button.normal:active {
+	border-color : $br-act;
+	background-color: $bg-act; 
+}
+// selected
+input[type="button"].selected,
+input[type="submit"].selected,
+button.normal.selected {
+	background-color: $bg-sel; 
+	border-color : $br-sel;
+}
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+button.normal:disabled {
+	color : $fg-dis;
+	background-color: $bg-dis; 
+	border-color : $br-dis;
+}
+

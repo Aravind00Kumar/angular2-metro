@@ -1,0 +1,33 @@
+{
+  "name": "angular2-metro",
+  "version": "1.0.0",
+  "description": "angular2.0 seed project with typescript and Visual Studio Code Editor",
+  "main": "index.js",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.37",
+    "reflect-metadata": "^0.1.0",
+    "systemjs": "^0.18.4",
+    "zone.js": "^0.5.2"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-size": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aravind00Kumar/angular2-metro.git"
+  },
+  "author": "Aravind Kumar P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aravind00Kumar/angular2-metro/issues"
+  },
+  "homepage": "https://github.com/Aravind00Kumar/angular2-metro#readme"
+}

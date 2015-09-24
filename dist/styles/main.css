@@ -1,0 +1,61 @@
+input[type="button"],
+input[type="submit"],
+button {
+  height: 1.99005em;
+  min-width: 8.42999em;
+  max-width: 13.64001em;
+  padding: 0.29034em;
+  outline: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: -0.01618em;
+  line-height: 0;
+  font-weight: 400;
+  transition: transform 300ms;
+  border-width: 0.17944em;
+  border-style: solid; }
+
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+  transform: scale(0.98382);
+  transition-duration: 0ms; }
+
+input[type="button"].normal,
+input[type="submit"].normal,
+button.normal {
+  color: #fff;
+  background-color: #0078d7;
+  border-color: #0078d7; }
+
+input[type="button"].normal:hover,
+input[type="submit"].normal:hover,
+button.normal:hover {
+  border-color: #004e8c; }
+
+input[type="button"].normal:active,
+input[type="submit"].normal:active,
+button.normal:active {
+  border-color: #004e8c;
+  background-color: #003f71; }
+
+input[type="button"].selected,
+input[type="submit"].selected,
+button.normal.selected {
+  background-color: #003f71;
+  border-color: #004e8c; }
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+button.normal:disabled {
+  color: #999999;
+  background-color: #0078d7;
+  border-color: #0078d7; }
+
+body, html {
+  background: #fff; }
+
+html, body, div, input, button, span, li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em; }

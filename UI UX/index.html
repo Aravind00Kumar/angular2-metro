@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1> Golden Mean Ration </h1>
+	<p> If </p>
+	<table id="table">
+		<tr>
+			<th colspan="5">sizes</th>
+		</tr>
+		<tr>
+			<th>height in (em)</th>
+			<th>output</th>
+			<th>radious in (em)</th>
+			<th>output</th>
+		</tr>
+	</table>
+	<p>References</p>
+	<ul>
+		<li>
+			<a href="http://pxtoem.com/">http://pxtoem.com/</a>
+		</li>
+		<li>
+			<a href="http://convert-to.com/446/pixels-px-to-em-conversion.html">http://convert-to.com/446/pixels-px-to-em-conversion.html</a>
+		</li>
+	</ul>
+
+	<script>
+		(function(){
+			var base = 0.01;
+			var phi = 1.618033988749;
+			var table = document.getElementById('table');
+			for(var i=0; i<18; i++){
+				var row = table.insertRow(i+2);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				var cell4 = row.insertCell(3);
+				var cell5 = row.insertCell(4);
+				cell1.innerHTML = base;
+				cell2.innerHTML = '<span> $em</span><div style="width:100px; height:$$em"></div>'.replace('$$',base).replace('$',i+1);
+				cell3.innerHTML = '<div style="height: 100px; width:$$em"></div>'.replace('$$',base);
+				cell4.innerHTML = '<div class="round" style="border-radius: $$em"></div>'.replace('$$',base);
+				cell5.innerHTML = '<div style="height: $$em; width:$$em"></div>'.replace('$$',base).replace('$$',base);
+				base = base * phi;
+			}
+			
+		})();
+	</script>
+</body>
+
+</html>

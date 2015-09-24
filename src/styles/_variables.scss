@@ -1,0 +1,76 @@
+// Global Geometry
+$height: 1em;
+$gm: 1.618033988749;
+//variables
+$e1 	: 0.01em;
+$e2		: 0.01618033988749em;
+$e3		: 0.02618033988746999em;	
+$e4		: 0.04236067977492761em;	
+$e5		: 0.06854101966234522em;	
+$e6		: 0.11090169943718807em;	
+$e7		: 0.17944271909939616em;	
+$e8		: 0.29034441853636234em;	
+$e9		: 0.4697871376353995em;	
+$e10	: 0.7601315561711809em;	
+$e11	: 1.2299186938056403em;	
+$e12	: 1.9900502499753003em;	
+$e13	: 3.21996894377848em;	
+$e14	: 5.210019193749798em;	
+$e15	: 8.429988137521836em;
+$e16	: 13.64000733126121em;
+$e17	: 22.069995468766177em;
+
+// colors
+$amount: 10%;
+
+// theme 1
+// $fg-color: #000;
+// $fg-dis-color: lighten($fg-color,40%);
+// $bg-color: #ccc; 
+// $br-color:#7a7a7a;
+
+// theme 2
+$fg-color: #fff;
+$fg-dis-color: darken($fg-color,40%);
+$bg-color:#0078d7;
+$br-color: #004e8c;
+
+// button
+$fg-reg	: $fg-color;
+$bg-reg	: $bg-color;
+$br-reg	: $bg-color;
+// button:hover
+$fg-reg-hover:$fg-color;
+$bg-reg-hover:$bg-color;
+$br-reg-hover:$br-color;
+
+// button:active (clicked/pressed)
+$fg-act :$fg-color;
+$bg-act :darken($bg-color,20%);
+$br-act :$br-color;
+
+// button.selected
+$fg-sel :$fg-color;
+$bg-sel :darken($bg-color,20%);
+$br-sel :$br-color;
+
+// button.selected:hover
+$fg-sel-hover :$fg-color;
+$bg-sel-hover :darken($bg-color,20%);
+$br-sel-hover :$br-color;
+
+// button:disabled
+// $select:
+$fg-dis :$fg-dis-color;
+$bg-dis :$bg-color;
+$br-dis :$bg-color;
+
+// button:disabled:hover
+$fg-dis-hover :$fg-dis-color;
+$bg-dis-hover :$bg-color;
+$br-dis-hover :$bg-color;
+
+
+// buution transform
+$scale: 1 - 0.01618033988749;
+$transition-speed:300ms;

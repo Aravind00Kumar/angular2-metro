@@ -1,0 +1,22 @@
+html{
+  font-size: 30px;
+}
+tr{
+  text-align: center;
+}
+td{
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid gray;
+  padding: 5px;
+}
+div {
+  background:red;
+}
+
+div.round{
+  height: 100px;
+  width: 100px;
+  border:1px solid red; 
+}
+

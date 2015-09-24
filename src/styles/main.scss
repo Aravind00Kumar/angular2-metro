@@ -1,0 +1,11 @@
+@import "_variables";
+@import "button";
+
+body, html {
+	background: #fff;
+}
+//font family
+html, body, div, input, button, span, li{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1em;
+}
