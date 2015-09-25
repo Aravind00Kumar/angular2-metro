@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     }
 };
 var angular2_1 = require("angular2/angular2");
-var Button = (function () {
-    function Button() {
+var ButtonExample = (function () {
+    function ButtonExample() {
     }
-    Button = __decorate([
+    ButtonExample = __decorate([
         angular2_1.Component({
             selector: 'div'
         }),
         angular2_1.View({
             templateUrl: "./examples/button/button.html"
         })
-    ], Button);
-    return Button;
+    ], ButtonExample);
+    return ButtonExample;
 })();
-exports.Button = Button;
+exports.ButtonExample = ButtonExample;

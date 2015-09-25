@@ -1,0 +1,27 @@
+
+outline
+http://outlinenone.com/
+
+// binding
+constant values
+<am-text type="password">
+
+oneway binding
+<am-text [value]="value" ></am-text>
+[value] - attribute name to bind
+"value" - is the the object vailable in the component
+
+// two way binding
+<input [(ng-model)]="message"></input>
+[(ng-model)] - binds the values to value attribute
+"message" - is the the object vailable in the component
+
+REMOVING BRACKETS
+<some-component [prop]="someExp" (event)="someEvent()" [(two-way-prop)]="someExp"></show-title>
+is same as
+<some-component bind-prop="someExp" on-event="someEvent()" bindon-two-way-prop="someExp"></show-title>
+
+Passing Constants
+<show-title title="Some Title"></show-title>
+is same as 
+<show-title [title]=" 'Some Title' "></show-title>

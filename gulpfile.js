@@ -11,16 +11,18 @@ var sass = require('gulp-sass');
 
 var PATHS = {
     src: {
-        js: 'src/**/*.js',
+        js: ['src/**/*.js', '!src/bower_components/**/'],
         html: 'src/**/*.html',
         sass: 'src/**/*.scss',
-        css:'src/styles/*.css'
+        css:  'src/styles/*.css',
+        fonts:'src/bower_components/font-awesome-sass/assets/fonts/**/*.*'
     },
     lib: [
         'node_modules/angular2/node_modules/traceur/bin/traceur-runtime.js',
         'node_modules/angular2/node_modules/rx/dist/rx.js',
         '!node_modules/systemjs/dist/*.src.js',
-        'node_modules/systemjs/dist/*.js'
+        'node_modules/systemjs/dist/*.js',
+        'src/bower_components/jquery/dist/jquery.js'
     ],
     dist: 'dist',
     distLib : 'dist/lib'
@@ -53,6 +55,10 @@ gulp.task('sass', function() {
     return gulp.src(['src/styles/main.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("src/styles"));
+});
+gulp.task('fonts', function() {
+    return gulp.src(PATHS.src.fonts)
+        .pipe(gulp.dest(PATHS.dist + '/fonts'));
 });
 
 gulp.task('angular2', function() {
@@ -98,7 +104,7 @@ gulp.task('open', function() {
         .pipe(open('', options));
 });
 
-gulp.task('build', ['js', 'html','css']);
+gulp.task('build', ['js', 'html','css','fonts']);
 gulp.task('default', ['build', 'libs']);
 gulp.task('serve', ['connect', 'open']);
 gulp.task('clean', function(done) {

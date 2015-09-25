@@ -1,0 +1,54 @@
+<style>
+    table td {
+        height: 50px;
+        padding: 5px;
+    }
+    div.options{
+        width: 60%;
+        float: left;
+    }
+    div.events{
+        width: 40%;
+        float: right;
+    }
+</style>
+<div>
+    <div class="options">
+        <h4>options</h4>
+        <table class="demo" border="1" style="width:80%">
+            <tr>
+                <td> Default textbox </td>
+                <td>
+                    <am-text [value]="value"></am-text>
+                </td>
+            </tr>
+            <tr>
+                <td> textbox with icon </td>
+                <td>
+                    <am-text [value]="value"></am-text>
+                </td>
+            </tr>
+            <tr>
+                <td> textbox with right </td>
+                <td>
+                    <am-text type="text" value="Hello world!"></am-text>
+                    <am-text type="password" value="Hello world!"></am-text>
+                    <am-text type="icontext" value="Hello world!"></am-text>
+                </td>
+            </tr>
+            <tr>
+                <td> textbox with left </td>
+                <td>
+                    <input [(ng-model)]="message"></input>
+                    <input [(ng-model)]="message"></input>
+                    <input [value]="message"></input>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="events">
+        <h4>Events</h4>
+
+    </div>
+    <div style="clear:both"></div>
+</div>

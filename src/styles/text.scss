@@ -1,0 +1,74 @@
+@import "references";
+
+// regular
+input, input[type="text"],
+input[type="password"]{
+	height: $e11;
+	padding: $e8;
+	outline: none;
+	line-height: 0;
+	font-weight: 400;
+	border-width : $e7;
+	border-style: solid;
+	color:$fg-txt-reg;
+	background-color: $bg-txt-reg;
+	border-color : $br-txt-reg;
+}
+
+// hover
+input:hover,
+input[type="text"]:hover,
+input[type="password"]:hover {
+	border-color : $br-txt-reg-hover;
+}
+
+// focus
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border-color : $br-txt-foc;
+	background-color: $bg-txt-foc;
+}
+
+
+// 
+// // normal
+// 
+// input[type="button"].normal,
+// input[type="submit"].normal,
+// button.normal {
+// 	color: $fg-reg;
+// 	background-color:$bg-reg; 
+// 	border-color : $br-reg;
+// }
+// 
+// // regular - hover
+// input[type="button"].normal:hover,
+// input[type="submit"].normal:hover,
+// button.normal:hover {
+// 	border-color : $br-reg-hover;
+// }
+// 
+// // active
+// input[type="button"].normal:active,
+// input[type="submit"].normal:active,
+// button.normal:active {
+// 	border-color : $br-act;
+// 	background-color: $bg-act; 
+// }
+// // selected
+// input[type="button"].selected,
+// input[type="submit"].selected,
+// button.normal.selected {
+// 	background-color: $bg-sel; 
+// 	border-color : $br-sel;
+// }
+// 
+// input[type="button"]:disabled,
+// input[type="submit"]:disabled,
+// button.normal:disabled {
+// 	color : $fg-dis;
+// 	background-color: $bg-dis; 
+// 	border-color : $br-dis;
+// }
+

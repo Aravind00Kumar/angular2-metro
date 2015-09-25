@@ -10,21 +10,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var angular2_1 = require("angular2/angular2");
 var router_1 = require("angular2/router");
 var router_2 = require('angular2/router');
+var ui_1 = require('core/ui');
 var button_1 = require('./examples/button/button');
+var text_1 = require('./examples/text/text');
 var App = (function () {
     function App() {
         this.name = "Aravind";
+        new ui_1.UI();
     }
     App = __decorate([
         router_2.RouteConfig([
-            { path: "/button", component: button_1.Button, as: 'button' }
+            { path: "/button", component: button_1.ButtonExample, as: 'button' },
+            { path: "/text", component: text_1.TextExample, as: 'text' }
         ]),
         angular2_1.Component({
             selector: 'app'
         }),
         angular2_1.View({
             directives: [router_2.RouterOutlet, router_2.RouterLink],
-            template: "<h1> Hello World! Welcome {{name}}</h1>\n                    <nav>\n                        <ul>\n                            <li> <a [router-link]=\"['./button']\">Button</a></li>\n                        </ul>\n                    </nav>\n                    <main>\n                        <router-outlet></router-outlet>\n                    </main>\n                  ",
+            template: "<h1> Hello World! Welcome {{name}}</h1>\n                    <nav>\n                        <ul>\n                            <li> <a [router-link]=\"['./button']\">Button</a></li>\n                            <li> <a [router-link]=\"['./text']\">Text</a></li>\n                        </ul>\n                    </nav>\n                    <main>\n                        <router-outlet></router-outlet>\n                    </main>\n                  ",
         })
     ], App);
     return App;

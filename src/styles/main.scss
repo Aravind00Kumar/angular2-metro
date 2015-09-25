@@ -1,5 +1,6 @@
-@import "_variables";
+@import "references";
 @import "button";
+@import "text";
 
 body, html {
 	background: #fff;
@@ -8,4 +9,11 @@ body, html {
 html, body, div, input, button, span, li{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1em;
+}
+
+// add outline when navigating through tab keys
+body.outline input[type="button"]:focus,
+body.outline input[type="submit"]:focus,
+body.outline button:focus , {
+	outline: $e5 dotted $ol-color; //5
 }

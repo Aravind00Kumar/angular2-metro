@@ -1,0 +1,16 @@
+{
+  "name": "angular2-metro",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Aravind00Kumar/angular2-metro",
+  "authors": [
+    "Aravind00Kumar <AravindKumarmail@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

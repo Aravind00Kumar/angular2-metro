@@ -8,6 +8,6 @@ import {Component, View, bootstrap} from "angular2/angular2";
 @View({
 	templateUrl: "./examples/button/button.html"
 })
-export class Button {
+export class ButtonExample {
 
 }

@@ -1,4 +1,5 @@
-@import "_variables";
+@import "references";
+
 
 // regular
 input[type="button"],
@@ -8,6 +9,7 @@ button {
 	min-width: $e15;
 	max-width: $e16;
 	padding: $e8;
+	padding-top:$e7;
 	outline: none;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -36,6 +38,7 @@ button.normal {
 	color: $fg-reg;
 	background-color:$bg-reg; 
 	border-color : $br-reg;
+	outline: none;
 }
 
 // regular - hover
@@ -51,6 +54,7 @@ input[type="submit"].normal:active,
 button.normal:active {
 	border-color : $br-act;
 	background-color: $bg-act; 
+	outline: none;
 }
 // selected
 input[type="button"].selected,

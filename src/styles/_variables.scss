@@ -25,15 +25,25 @@ $amount: 10%;
 
 // theme 1
 // $fg-color: #000;
-// $fg-dis-color: lighten($fg-color,40%);
 // $bg-color: #ccc; 
 // $br-color:#7a7a7a;
+// $ol-color:#7a7a7a;
+// $fg-dis-color: lighten($fg-color,40%);
+// $bg-dis-color: $bg-color;
+
 
 // theme 2
-$fg-color: #fff;
-$fg-dis-color: darken($fg-color,40%);
+$fg-color:#fff;
+
+$fg-text-color: #171717;
+$br-text-color: #7a7a7a;
+$br-text-hover-color: #171717;
+
 $bg-color:#0078d7;
-$br-color: #004e8c;
+$br-color:#004e8c;
+$ol-color:#004e8c;
+$fg-dis-color: darken($fg-color,40%);
+$bg-dis-color: grayscale($bg-color);
 
 // button
 $fg-reg	: $fg-color;
@@ -60,17 +70,36 @@ $bg-sel-hover :darken($bg-color,20%);
 $br-sel-hover :$br-color;
 
 // button:disabled
-// $select:
+
 $fg-dis :$fg-dis-color;
-$bg-dis :$bg-color;
-$br-dis :$bg-color;
+$bg-dis :$bg-dis-color;
+$br-dis :$bg-dis-color;
 
 // button:disabled:hover
 $fg-dis-hover :$fg-dis-color;
-$bg-dis-hover :$bg-color;
-$br-dis-hover :$bg-color;
+$bg-dis-hover :$bg-dis-color;
+$br-dis-hover :$bg-dis-color;
 
 
 // buution transform
 $scale: 1 - 0.01618033988749;
 $transition-speed:300ms;
+
+
+// text
+$fg-txt-reg: $fg-text-color;
+$bg-txt-reg: transparent;
+$br-txt-reg: $br-text-color; 
+
+// text hover
+$br-txt-reg-hover:$br-text-hover-color;
+$bg-txt-reg-hover: transparent;
+
+// text focus
+$br-txt-foc: $br-color;
+$bg-txt-foc: $fg-color;
+
+// text disabled
+
+//
+
